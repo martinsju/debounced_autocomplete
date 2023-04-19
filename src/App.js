@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useState, useEffect } from 'react'
+import AutoComplete from './autocomplete_v2'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	function onSelectItem(item) {
+		console.log('clicked ', item.email)
+	}
+
+	return <AutoComplete onSelectItem={onSelectItem} />
 }
 
-export default App;
+export default App
