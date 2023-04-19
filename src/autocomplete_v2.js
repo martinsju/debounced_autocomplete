@@ -56,7 +56,6 @@ function AutoComplete({ onSelectItem }) {
 	return (
 		<div className='wrapper'>
 			<div className={classnames('control', { 'is-loading': isLoading })}>
-				{/* here the user enters a query, so maybe the "q" query doesnt need to be at the endpoint */}
 				<input className='input' type='text' onChange={handleInput} />
 				<label htmlFor=''>Loading: {isLoading.toString()}</label>
 			</div>
